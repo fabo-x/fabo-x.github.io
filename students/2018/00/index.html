@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student page! 2018</title>
+    <style>
+      @-webkit-keyframes rainbow1 {
+        0%    { background-color: rgb(255,0,0); }
+        16.7% { background-color: rgb(255,255,0); }
+        33.3% { background-color: rgb(0,255,0); }
+        50%   { background-color: rgb(0,255,255); }
+        66.7% { background-color: rgb(0,0,255); }
+        83.3% { background-color: rgb(255,0,255); }
+        100%  { background-color: rgb(255,0,0); }
+      }
+
+      @-webkit-keyframes rainbow2 {
+        50%   { color: rgb(255,0,0); }
+        66.7% { color: rgb(255,255,0); }
+        83.3% { color: rgb(0,255,0); }
+        100%  { color: rgb(0,255,255); }
+        000%  { color: rgb(0,255,255); }
+        16.7% { color: rgb(0,0,255); }
+        33.3% { color: rgb(255,0,255); }
+      }
+
+      body {
+        -webkit-animation: rainbow1 .2s infinite, rainbow2 .2s infinite;
+        width: 100%;
+        align-content: center;
+        margin:auto;
+      }
+      a {
+        -webkit-animation: rainbow1 .2s infinite, rainbow2 .2s infinite;
+      }
+      h1 {
+        -webkit-animation: rainbow1 .2s infinite, rainbow2 .2s infinite;
+        font-size: 125px;
+        margin: 0px 0px 0px 0px;  
+      }
+  </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>
+      This is my bio; here are my things; <a href="/index.html">here is our class page!</a>
+    </p>
+    <img src="images/picture.jpeg">
+  </body>
+</html>
