@@ -21,28 +21,60 @@
     
     <!-- Fabo Academy X theme -->
     <link href="bootstrap/css/faboacademyx.css" rel="stylesheet">
-
-    <!--don't modify the next three lines-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--don't modify the above three lines-->  
       
     <!--you can change the next line to include google-font, check out their website-->  
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     
     <style>
-      img {
-        max-width: 100%;
-      }
+      * {box-sizing: border-box;}
       body {
         padding-left: 10px; padding-right: 10px;
         margin: auto;
         max-width: 1044px;
       }
-      nav {
+      .navbar, .navbar-default, .navbar-fixed-top, .nav {
         margin: auto;
-        padding-left: 10px; padding-right: 10px;
+      }
+      .mySlides {display: none;}
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      .active {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fadeFABO {
+        -webkit-animation-name: fadeFABO;
+        -webkit-animation-duration: 2s;
+        animation-name: fadeFABO;
+        animation-duration: 4.0s;
+      }
+
+      @-webkit-keyframes fadeFABO {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @keyframes fadeFABO {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      table {
+        max-width: 1024px;
+        width: 100%;
+      }
+      td {
+        vertical-align: top;
       }
     </style>
   </head>
@@ -51,7 +83,7 @@
     <!-- beginning of navigation bar -->      
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">     <!-- this div align the navbar with the container -->   
-        <div class="navbar-header">       <!-- this div contain the title of your website --> 
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -61,13 +93,13 @@
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">       <!-- this list has all the elements of your menu --> 
+          <ul class="nav navbar-nav">
             <li><a href="https://fablabo.org/">ABOUT US</a></li>      <!-- link to abou -->    
-            <li><a href="http://archive.fabacademy.org/2017/fablabshangai/">FAB ACADEMY</a></li>      <!-- link to fab academy project -->
-            <li><a href="faboxacademy/index.html">FABO X ACADEMY</a></li>      <!-- link to your personal info -->
-               <li><a href="http://tjdi2018.sxl.cn/">VR+AR CLASS</a></li>      <!-- link to your personal info -->
-            <li><a href="faboplayground.html">FABO PLAYGROUND</a></li>      <!-- link to textile academy -->
-            <li><a href="http://saveriosilli.fabcloud.io/fabricademy-saveriosilli/index.html">TEXTILE ACADEMY</a></li>      <!-- link to textile academy -->
+            <li><a href="http://archive.fabacademy.org/2017/fablabshangai/">FAB ACADEMY</a></li>
+            <li><a href="faboxacademy/index.html">FABO X ACADEMY</a></li>
+               <li><a href="http://tjdi2018.sxl.cn/">VR+AR CLASS</a></li>
+            <li><a href="faboplayground.html">FABO PLAYGROUND</a></li>
+            <li><a href="http://saveriosilli.fabcloud.io/fabricademy-saveriosilli/index.html">TEXTILE ACADEMY</a></li>
             <li><a href="http://bestia.one/index.html">TUTORIALS</a></li>      <!-- link to bestia -->
           </ul>
         </div>
@@ -75,11 +107,11 @@
     </nav>
     <!-- end of navigation bar -->
   
-    <img src="images/logofabox.png">
-    
-    <h1 style="font-size: 3em">FABO [uLink] Academy X 2018</h1>
+    <img src="images/logofabox.png" alt="fabo academy X logo">
+
+    <h1 style="font-size: 3em">FABO Academy X 2018 : U-LINK Edition</h1>
     <p>
-      FABO ACADEMY X officially launches at Suzhou uLink, spring of 2018, with 40 future makers!
+      FABO ACADEMY X officially launches at Suzhou ULINK, spring of 2018 with 40 future makers!
     </p>
     <p>
       Fabo Academy X is an intensive course into digital manufacturing and rapid prototyping, organized by Fablab O Shanghai. In this nine session programme, high-school or collegiate students learn to envision, prototype and document their ideas through many hours of hands-on experience with digital fabrication tools.
@@ -87,13 +119,32 @@
     <p>
       <a href="https://fablabo.wordpress.com/"><b><i>For inquiries click here.</i></b></a>
     </p>
-    <img src="images/suzhou_class.jpg">
+    
+    <!--Automatic Slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides fadeFABO">
+        <img src="/images/suzhou_laserCut.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fadeFABO">
+        <img src="/images/suzhou_class.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fadeFABO">
+        <img src="/images/suzhou_progressionSlide.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fadeFABO">
+        <img src="/images/suzhou_lc_students.jpg" style="width:100%">
+      </div>
+
+    </div>
     
     <h2>Student Documentation</h2>
-    <table style="width:800px">
+    <table>
     <!--session 1-->
-      <td style="width:50%">
-        <li><a href="students/2018/00/index.html">Chuck Liddell</a></li>
+      <td>
+        <li><a href="students/2018/00/index.html">Chuck</a></li>
         <li><a href="students/2018/01/index.html">Percy</a></li>
         <li><a href="students/2018/02/index.html">Alli</a></li>
         <li><a href="students/2018/03/index.html">Steven</a></li>
@@ -108,6 +159,8 @@
         <li><a href="students/2018/12/index.html">Jordan</a></li>
         <li><a href="students/2018/13/index.html">Carole</a></li>
         <li><a href="students/2018/14/index.html">Jason</a></li>
+      </td>
+      <td>
         <li><a href="students/2018/15/index.html">Coco</a></li>
         <li><a href="students/2018/16/index.html">Steven #2</a></li>
         <li><a href="students/2018/17/index.html">Tony</a></li>
@@ -118,14 +171,14 @@
         <li><a href="students/2018/22/index.html">Bryan</a></li>
         <li><a href="students/2018/23/index.html">Owen</a></li>
         <li><a href="students/2018/24/index.html">Andy</a></li>
-      </td>
     <!--session 2-->
-      <td>
         <li><a href="students/2018/26/index.html">Vivian</a></li>
         <li><a href="students/2018/27/index.html">Emmy</a></li>
         <li><a href="students/2018/28/index.html">Jason #2</a></li>
         <li><a href="students/2018/29/index.html">Alex</a></li>
         <li><a href="students/2018/30/index.html">Andy</a></li>
+      </td>
+      <td>
         <li><a href="students/2018/31/index.html">Jason #3</a></li>
         <li><a href="students/2018/32/index.html">Jake</a></li>
         <li><a href="students/2018/33/index.html">Linda</a></li>
@@ -139,6 +192,7 @@
         <li><a href="students/2018/41/index.html">Wilson</a></li>
         <li><a href="students/2018/42/index.html">Tony #2</a></li>
         <li><a href="https://bestia.io">J.travis</a></li>
+        <li><a href="http://fabacademy.org/archives/2015/eu/students/silli.saverio/index.html">Saverio</a></li>
       </td>
     </table>
     
@@ -158,5 +212,23 @@
         <li><a href="http://brackets.io/">Brackets : Open-source text editor</a></li>
       </ol>
     </ul>
+    
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 4 seconds
+      }
+    </script>
   </body>
 </html>
