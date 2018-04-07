@@ -40,6 +40,22 @@
         max-width: 100%;
         vertical-align: middle;
       }
+      table {
+        max-width: 1024px;
+        width: 100%;
+      }
+      td {
+        vertical-align: top;
+      }
+      .resources > li {
+        font-size: 130%;
+        font-weight: bold;
+        margin: 0.3em -1em;
+      }
+      .resources > ol {
+        margin-left: -3em;
+      }
+       
       
       /* Slideshow container */
       .slideshow-container {
@@ -58,28 +74,17 @@
         animation-name: fadeFABO;
         animation-duration: 3.2s;
       }
-
       @-webkit-keyframes fadeFABO {
         from {opacity: .4} 
         to {opacity: 1}
       }
-
       @keyframes fadeFABO {
         from {opacity: .4} 
         to {opacity: 1}
       }
-      
-      table {
-        max-width: 1024px;
-        width: 100%;
-      }
-      td {
-        vertical-align: top;
-      }
     </style>
   </head>
   <body>
-    
     <!-- beginning of navigation bar -->      
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">     <!-- this div align the navbar with the container -->   
@@ -106,6 +111,7 @@
       </div>
     </nav>
     <!-- end of navigation bar -->
+    
   
     <img src="images/logofabox.png" alt="fabo academy X logo">
 
@@ -140,6 +146,10 @@
       
       <div class="mySlides fadeFABO">
         <img src="/images/suzhou_3D-print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fadeFABO">
+        <img src="/images/suzhou_3D-print-students.jpg" style="width:100%">
       </div>
 
     </div>
@@ -201,24 +211,33 @@
     </table>
     
     <h2>Helpful Resources</h2>
-    <ul>
-      <li style="font-size: 130%; font-weight: bold; margin: 0.3em 0">Git Resources</li>
-      <ol style="margin-left: -1.5em">
+    <ul class="resources">
+      <li>Git Resources</li>
+      <ol>
         <li><a href="https://github.com">Sign up for Github</a></li>
         <li><a href="https://github.com/fabo-x/fabo-x.github.io">Github Repository</a></li>
       </ol>
-      <li style="font-size: 130%; font-weight: bold; margin: 0.3em 0">Web coding stuff</li>
-      <ol style="margin-left: -1.5em">
+      
+      <li>Web coding stuff</li>
+      <ol>
         <li><a href="https://bestia.one/coding.html">Web Coding & Github walkthroughs : from know nothing to basic</a></li>
         <li><a href="https://www.w3schools.com/">W3 Schools : The end all be all web coding resource ( sometimes it is inaccessible in China )</a></li>
         <li><a href="https://pixlr.com/editor/">Pixlr Editor : Free web-based image editor</a></li>
         <li><a href="https://www.gimp.org/">Gimp : Open-source image editor</a></li>
         <li><a href="http://brackets.io/">Brackets : Open-source text editor</a></li>
       </ol>
-      <li style="font-size: 130%; font-weight: bold; margin: 0.3em 0">Laser Cutting</li>
-      <ol style="margin-left: -1.5em">
+      
+      <li>Laser Cutting</li>
+      <ol>
         <li><a href="https://bestia.one/laserCutter.html">Basics of machine operation and laser kerf</a></li>
         <li><a href="https://bestia.one/images/laserCutting/laserKerf/kerfTestTemplate.svg" download>Laser kerf test template</a></li>
+      </ol>
+      
+      <li>3-D Printing</li>
+      <ol>
+        <li><a href="http://reprap.org">RepRap wiki : loads of information on all things 3-D printing</a></li>
+        <li><a href="https://bestia.one/3dprinting.html">How to prepare files for Makerbot printers</a></li>
+        <li><a href="https://www.thingiverse.com/">Thingiverse is a free repository of 3-D models. Download and print</a></li>
       </ol>
     </ul>
     
