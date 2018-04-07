@@ -1,35 +1,35 @@
-<!DOCTYPE html>
+<Idoctype html>
 <html>
-  <head>
-    <title>Student page! 2018</title>
+<head>
+<link rul="stylesheet"
+      type="text/css"
+      href="style.css">
+                     
+<title> Ulink Percy Web</title>
+<style>
+    body { font-family: monospace; color: crimson}
+    img { border-radius: 20px; border: 5px dashed red;}
+    p{ border: 5px solid red; }
+    </style>
+</head>
+<body>
+    <h1> Welcome to Percy's homepage </h1>
+    <p style="color:white; background-color:blue"> This is my homepage <b> For homework </b></p>
     
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("includeHTML");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-                elmnt.removeAttribute("includeHTML");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
-        }
-      };
-    </script>
-  </head>
-  <body>
-    <div includeHTML="/bootstrap/includes/seed.html"></div>
-    
-    <script>includeHTML();</script>
-  </body>
+    <a href="http://www.sz-alevel.com/"> 
+    <img src="image/1.png"width="300px"> </a>
+    <a href="https://github.com/fabo-x/fabo-x.github.io/tree/master/students/2018/01"> <img src="image/picture.jpg"width="300px"> </a>
+    <h2>My homework </h2>
+        <li><a href="week1.html"> week1 </a></li>
+        <li><a href="week2.html"> week2</a></li>
+        <li><a href="week3.html"> week3 </a></li>
+</body>
+
+
+
+
+
+
+
+
 </html>
