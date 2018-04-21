@@ -1,35 +1,50 @@
 <!DOCTYPE html>
+
 <html>
+
+    
+
   <head>
-    <title>Student page! 2018</title>
-    
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("includeHTML");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-                elmnt.removeAttribute("includeHTML");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
-        }
-      };
-    </script>
+
+    <title>Pearlescent</title>
+
+    <link rel="stylesheet" type="text/css" 
+
+          href="webpage.css">
+
   </head>
+
+
+
+
+
   <body>
-    <div includeHTML="/bootstrap/includes/seed.html"></div>
+
+    <h1>Welcome to Harry's Homepage</h1>
+
+
+      
+
+    <p style=""> </p>
+
+    <a href="images/bananaman1.gif"><img src="bananaman1.gif" width="700px"></a>
+
+    <a href="images/bananaman2.gif"><img src="bananaman2.gif" width="700px"></a>
+
+      
+
+    <h2>This is a list of assignment</h2>
+
+      <li><a href="week1.html">week1</a></li>
+
+      <li>week2</li>
+
+      <li>week3</li>
+
+  
+
+    </body>
+
     
-    <script>includeHTML();</script>
-  </body>
+
 </html>
