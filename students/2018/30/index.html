@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Student page! 2018</title>
+
+<head>
     
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("includeHTML");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-                elmnt.removeAttribute("includeHTML");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
-        }
-      };
-    </script>
-  </head>
-  <body>
-    <div includeHTML="/bootstrap/includes/seed.html"></div>
+<title>Andy's Website</title>
+   <style>
+        body { background-color:aquamarine}  
+    </style>  
+</head>
+
+<body>
+    <h1 style="border: dotted black">WELCOME TO ULINK</h1>
+<p style="font-size: 50px ">  This is our first lesson </p>
+   
+ <img src="windows/images/1521880814915.jpg" width="40%" height="40%">
+    <img src="windows/images/1521880252879.jpg" width="40%" height="40%">
     
-    <script>includeHTML();</script>
-  </body>
+    <h2 style="animation-fill-mode: forwards">How fantastic the 3D printing machine is!!!</h2>
+  <p style="color: forestgreen">By using this machine, we can print whatever we want based on the computer.</p>
+    <img src="windows/images/IMG_20180407_164747.jpg" width="60%" height="60%">
+    <h3 style="border:dotted red">3D scanner is always fascinated</h3>
+
+    
+<a href="http://www.sz-alevel.com">Click here to find out more</a>
+    
+  
+
+    
+    
+    
+   <br><br>
+
+</body>
+
 </html>
