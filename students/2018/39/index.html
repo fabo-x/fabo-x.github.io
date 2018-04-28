@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Student page! 2018</title>
+
+<head>
+
+<title>Christine's Website</title>
     
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("includeHTML");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-                elmnt.removeAttribute("includeHTML");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
-        }
-      };
-    </script>
-  </head>
-  <body>
-    <div includeHTML="/bootstrap/includes/seed.html"></div>
     
-    <script>includeHTML();</script>
-  </body>
+    <link rel="stylesheet" type="text/css"
+          href="lalal.css">
+    
+    
+
+    
+          </head>  
+
+
+<body>
+    
+    <h1>Games</h1>
+     <p>Welcome~</p>
+    <li><a href="3d.html"> hohoho</a></li>
+<li><a href="cut.html">hahaha</a></li>
+    
+  <p style="color:cadeblue;">lick the picture</p>
+    
+    <a href="http://www.4399.com"><img src="images/....jpg.jpg"width="300px"></a>
+    <a href="http://www.7k7k.com"><img src="images/..jpg" width="300px"></a>
+    <h1>this is my product of 3d printing and lazer cutter</h1>
+    <img src="IMG_2215.JPG" width="30%">
+    <img src="IMG_2216.JPG" width="30%">
+<h1>this is my PDB </h1>
+    <img src="IMG_2357.PNG" width="30%">
+    <img src="IMG_2358.PNG" width="30%">
+<br><br>
+    <p3>Soldering is so much fun</p3>
+    
+    
+
+    
+    
+    </body>
+    
+    
+
+
+
 </html>

@@ -1,0 +1,6 @@
+ <style>
+    body{color:aquamarine; font-family: fantasy; background-color:antiquewhite} 
+    p {color:darkcyan;font-family:fantasy }
+    h1{color:darkcyan;font-family:fantasy }
+    li{color:darkcyan;font-family:fantasy }
+    </style>
