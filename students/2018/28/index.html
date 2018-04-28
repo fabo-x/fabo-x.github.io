@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Student page! 2018</title>
+    <title>Jason's page</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      img {
+        width: 100%;
+      }
+      body {
+        background-color: aqua;
+      }
+    </style>
     
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("includeHTML");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-                elmnt.removeAttribute("includeHTML");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
-        }
-      };
-    </script>
   </head>
+  
   <body>
-    <div includeHTML="/bootstrap/includes/seed.html"></div>
-    
-    <script>includeHTML();</script>
+    <h1>Just for fun, this is my first header.</h1>
+    <h2>Jason!</h2>
+    <p>
+      Everything inside here will be a paragraph, even smaller font.
+    </p>
+    <ol>
+      <li><a href="week1.html">Week 1 : Laser cutting</a></li>
+      <li>Week 2 : 3-d printing</li>
+    </ol>
+    <img src="images/img_0835.jpg">
+    <img style="width: 30%;" src="images/IMG_1643.JPG">
   </body>
 </html>

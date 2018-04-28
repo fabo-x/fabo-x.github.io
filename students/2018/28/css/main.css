@@ -1,0 +1,9 @@
+body {
+  background-color: orange;
+}
+h1 {
+  font-size: 6em;
+  text-transform: lowercase;
+  font-style: italic;
+  font-family: cursive;
+}
