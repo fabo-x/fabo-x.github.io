@@ -1,0 +1,31 @@
+#b
+{
+opacity:0.7;
+}
+#b:hover
+{
+opacity:1.0;
+    
+      
+}
+
+#A
+{
+opacity:0.1;
+      -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);
+    
+      
+}
+#A:hover
+{
+opacity:1.0;
+  -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);      }
+center { color:powderblue; font-family: fantasy; border:4px dashed powderblue ;font-size: 400% }
