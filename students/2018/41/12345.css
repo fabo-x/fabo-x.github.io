@@ -1,10 +1,11 @@
 img
 {
   -webkit-filter:none;
+    opacity:0.9;
 }
 img:hover
 {
  -webkit-filter: contrast(1.4);
-
+opacity:1.0;
 
 }
