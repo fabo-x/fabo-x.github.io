@@ -1,11 +1,33 @@
-img
+#M
 {
 opacity:0.7;
     margin: auto
+              -webkit-filter: blur(8px);
+            -moz-filter: blur(8px);
+            -o-filter: blur(8px);
+            -ms-filter: blur(8px);
+            filter: blur(8px);
+    
 }
-img:hover
+#M:hover
 {
 opacity:1.0;
     margin: auto
-      
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);
+    
+}
+#X
+{
+opacity:0.5;
+    margin: auto
+}
+#X:hover
+{
+opacity:1.0;
+    margin: auto
+
 }
