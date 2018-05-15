@@ -31,3 +31,22 @@ opacity:1.0;
     margin: auto
 
 }
+#Z
+{
+opacity:0.5;
+      -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);  
+    
+      
+}
+#Z:hover
+{
+opacity:1.0;
+  -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);       }
